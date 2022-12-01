@@ -7,108 +7,235 @@
     <title>Document</title>
     <style>
     *{
-        /* background-color: rgb(37, 40, 40);
-         */
-         background-image: url('img/back.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: rgb(185, 177, 223);
+    /* background-color: rgb(37, 40, 40);
+     */
+     background-image: url('img/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(185, 177, 223);
+    
+}
+    img{
+        display: block;
+        width: 15%;
+        border-radius: 45%;
+        margin: auto;
     }
-        img{
-            display: block;
-            width: 15%;
-            border-radius: 45%;
-            margin: auto;
-        }
-        .auto-type,button{
-           background: linear-gradient(90deg,#ff0000,#ffff00,#ff00f3,#1befd6,#ff00c4,#ff0000);
-           background-size: 400%;
-           font-size: 2.3rem;
-           font-family: 'Times New Roman', Times, serif;
-           letter-spacing: .1vw;
-           word-spacing: .4vw;
-           -webkit-text-fill-color: transparent;
-           -webkit-background-clip: text;
-           animation: animate 10s linear infinite;
+    button{
+       background: linear-gradient(90deg,#ff0000,#ffff00,#ff00f3,#1befd6,#ff00c4,#ff0000);
+       background-size: 100%;
+       font-size: 2.3rem;
+       font-family: 'Times New Roman', Times, serif;
+       letter-spacing: .1vw;
+       word-spacing: .4vw;
+       -webkit-text-fill-color: transparent;
+       -webkit-background-clip: text;
+       animation: animate 10s linear infinite;
 
+    }
+    .auto-type{
+        background: linear-gradient(90deg,#ff0000,#ffff00,#ff00f3,#1befd6,#ff00c4,#ff0000);
+        background-size: 100%;
+        font-size: 2.8rem;
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: .1vw;
+        word-spacing: .4vw;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        animation: animates 10s linear infinite;
+ 
+     }
+    header{
+       background: linear-gradient(90deg,#efeded,#9e5ced,#ff00f3,#2afa69,#f40bbe,#00c3ff,#ff0000,#ffff00,#ff00f3,#1befd6,#ff00c4,#ff0000);
+       background-size: 400%;
+       font-size: 2.3rem;
+       font-family: 'Times New Roman', Times, serif;
+       letter-spacing: .1vw;
+       word-spacing: .4vw;
+       -webkit-text-fill-color: transparent;
+       -webkit-background-clip: text;
+       animation: animate 10s linear infinite;
+
+    }
+    @keyframes animates
+    {
+       0%{
+           background-position: 0%;
+       }
+       100%{
+           background-position: 400%;
+       }
+       
+       
+   }
+    @keyframes animate
+     {
+        0%{
+            background-position: 0%;
+        }
+        100%{
+            background-position: 400%;
+        }
+        
+        
+    }
+    .intro{
+            text-align: center;
+        }
+        .btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        button{
+            margin: 3%;
+            font-size:2.3rem ;
+            background-color: rgb(161, 118, 118);
+            border: none;
+            color: white;
+          
+        }
+        #about{
+            display: block;
         }
         header{
-           background: linear-gradient(90deg,#efeded,#9e5ced,#ff00f3,#2afa69,#f40bbe,#00c3ff,#ff0000,#ffff00,#ff00f3,#1befd6,#ff00c4,#ff0000);
-           background-size: 400%;
-           font-size: 2.3rem;
-           font-family: 'Times New Roman', Times, serif;
-           letter-spacing: .1vw;
-           word-spacing: .4vw;
-           -webkit-text-fill-color: transparent;
-           -webkit-background-clip: text;
-           animation: animate 10s linear infinite;
-
+            text-align: center;
         }
-        @keyframes animate
-         {
-            0%{
-                background-position: 0%;
-            }
-            100%{
-                background-position: 400%;
-            }
-            
+        tr{
+            /* border-right: 2px solid white; */
+          /* margin: 2%; */
+          margin-top: 3%;
+          text-align: center;
+        }
+        th{
+            border-right: 2px solid white;
+            color: rgb(221, 216, 216);
+            font-size: 1.3rem;
+            border-bottom: .4vh solid white;
+        }
+        td{
+            font-size: 1 rem;
+            border-right: 2px solid white;
+            border-bottom: .4vh solid white;
+        }
+        #table{
+            /* display: true; */
+            border-top: .4vh solid white;
+            border-left: .4vh solid white;
             
         }
-        .intro{
-                text-align: center;
-            }
-            .btn{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+        #containers{
+            margin-top: -3%;
+            display: none;
+        }
+        #entry{
+            text-align: center;
+            letter-spacing: .1vw;
+            word-spacing: .5vw;
+        }
+        @media (min-width:812px) and (max-width:1000px){
             button{
-                margin: 3%;
-                font-size:180% ;
-                background-color: rgb(161, 118, 118);
-                border: none;
-                color: white;
-              
-            }
-            #about{
-                display: block;
-            }
-            header{
-                text-align: center;
-            }
-            tr{
+                background: linear-gradient(90deg,#ff0000,#ffff00,#ff00f3,#1befd6,#ff00c4,#ff0000);
+                background-size: 100%;
+                font-size: 1.5rem;
+                font-family: 'Times New Roman', Times, serif;
+                letter-spacing: .1vw;
+                word-spacing: .4vw;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                animation: animate 10s linear infinite;
+         
+             }
+             .auto-type{
+                background: linear-gradient(90deg,#ff0000,#ffff00,#ff00f3,#1befd6,#ff00c4,#ff0000);
+                background-size: 100%;
+                font-size: 2rem;
+                font-family: 'Times New Roman', Times, serif;
+                letter-spacing: .1vw;
+                word-spacing: .4vw;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                animation: animate 10s linear infinite;
+         
+             }
+             tr{
                 /* border-right: 2px solid white; */
               /* margin: 2%; */
               margin-top: 3%;
               text-align: center;
             }
             th{
-                border-right: 2px solid white;
+                border-right: 1px solid white;
                 color: rgb(221, 216, 216);
-                font-size: 1.3rem;
-                border-bottom: .4vh solid white;
+                font-size: 1rem;
+                border-bottom: .3vh solid white;
             }
             td{
-                font-size: 1 rem;
-                border-right: 2px solid white;
-                border-bottom: .4vh solid white;
+                font-size: 1rem;
+                border-right: 1.2px solid white;
+                border-bottom: .3vh solid white;
             }
             #table{
                 /* display: true; */
-                border-top: .4vh solid white;
-                border-left: .4vh solid white;
+                border-top: .3vh solid white;
+                border-left: .3vh solid white;
                 
             }
-            #containers{
-                margin-top: -3%;
-                display: none;
+        }
+        @media screen and (max-width: 900px){
+
+            *{
+             top: 33vh;
             }
-            #entry{
-                text-align: center;
+            
+            button{
+                background: linear-gradient(90deg,#ff0000,#ffff00,#ff00f3,#1befd6,#ff00c4,#ff0000);
+                background-size: 100%;
+                font-size: .6rem;
+                font-family: 'Times New Roman', Times, serif;
                 letter-spacing: .1vw;
-                word-spacing: .5vw;
+                word-spacing: .4vw;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                animation: animate 10s linear infinite;
+         
+             }
+             .auto-type{
+                background: linear-gradient(90deg,#ff0000,#ffff00,#ff00f3,#1befd6,#ff00c4,#ff0000);
+                background-size: 100%;
+                font-size: 1rem;
+                font-family: 'Times New Roman', Times, serif;
+                letter-spacing: .1vw;
+                word-spacing: .4vw;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                animation: animate 10s linear infinite;
+         
+             }
+             tr{
+                /* border-right: 2px solid white; */
+              /* margin: 2%; */
+              margin-top: 3%;
+              text-align: center;
             }
+            th{
+                border-right: 1px solid white;
+                color: rgb(221, 216, 216);
+                font-size: .6rem;
+                border-bottom: .2vh solid white;
+            }
+            td{
+                font-size: .6rem;
+                border-right: 1px solid white;
+                border-bottom: .2vh solid white;
+            }
+            #table{
+                /* display: true; */
+                border-top: .2vh solid white;
+                border-left: .2vh solid white;
+                
+            }
+        }
     </style>
 </head>
 <body>
