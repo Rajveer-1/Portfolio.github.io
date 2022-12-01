@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        /* background-color: rgb(37, 40, 40);
+         */
+         background-image: url('img/back.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: rgb(185, 177, 223);
+    }
+        img{
+            display: block;
+            width: 15%;
+            border-radius: 45%;
+            margin: auto;
+        }
+        .auto-type,button{
+           background: linear-gradient(90deg,#ff0000,#ffff00,#ff00f3,#1befd6,#ff00c4,#ff0000);
+           background-size: 400%;
+           font-size: 2.3rem;
+           font-family: 'Times New Roman', Times, serif;
+           letter-spacing: .1vw;
+           word-spacing: .4vw;
+           -webkit-text-fill-color: transparent;
+           -webkit-background-clip: text;
+           animation: animate 10s linear infinite;
+
+        }
+        header{
+           background: linear-gradient(90deg,#efeded,#9e5ced,#ff00f3,#2afa69,#f40bbe,#00c3ff,#ff0000,#ffff00,#ff00f3,#1befd6,#ff00c4,#ff0000);
+           background-size: 400%;
+           font-size: 2.3rem;
+           font-family: 'Times New Roman', Times, serif;
+           letter-spacing: .1vw;
+           word-spacing: .4vw;
+           -webkit-text-fill-color: transparent;
+           -webkit-background-clip: text;
+           animation: animate 10s linear infinite;
+
+        }
+        @keyframes animate
+         {
+            0%{
+                background-position: 0%;
+            }
+            100%{
+                background-position: 400%;
+            }
+            
+            
+        }
+        .intro{
+                text-align: center;
+            }
+            .btn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            button{
+                margin: 3%;
+                font-size:180% ;
+                background-color: rgb(161, 118, 118);
+                border: none;
+                color: white;
+              
+            }
+            #about{
+                display: block;
+            }
+            header{
+                text-align: center;
+            }
+            tr{
+                /* border-right: 2px solid white; */
+              /* margin: 2%; */
+              margin-top: 3%;
+              text-align: center;
+            }
+            th{
+                border-right: 2px solid white;
+                color: rgb(221, 216, 216);
+                font-size: 1.3rem;
+                border-bottom: .4vh solid white;
+            }
+            td{
+                font-size: 1 rem;
+                border-right: 2px solid white;
+                border-bottom: .4vh solid white;
+            }
+            #table{
+                /* display: true; */
+                border-top: .4vh solid white;
+                border-left: .4vh solid white;
+                
+            }
+            #containers{
+                margin-top: -3%;
+                display: none;
+            }
+            #entry{
+                text-align: center;
+                letter-spacing: .1vw;
+                word-spacing: .5vw;
+            }
+    </style>
+</head>
+<body>
+   <header>You must know about me</header>
+    <img src="img/1.jpg" alt="">
+    <section class="container">
+    <h1 class="intro"><span class="auto-type"></span> </h1>
+</section>
+<footer class="btn">
+    
+        
+    <button  class="btn1">About</button>
+    
+    
+
+    <button class="btn1">Qualification</button>
+    <button class="btn1">Hobbies</button>
+    <button class="btn1">Skills and Achievements</button>
+    <button class="btn1">Aim</button>
+    
+</footer>
+<p ><h3 id="entry">
+ 
+</h3></p>
+<div id="containers">
+<table style="width:100%" id="table">
+    <tr>
+      <th>S.No.</th>
+      <th>Year Of Passing</th>
+      <th>Qualification</th>
+      <th>Institute</th>
+      <th>University/Board</th>
+      <th>Percentage(Cgpa)</th>
+
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2022</td>
+      <td>B.Tech(1st year)</td>
+      <td>GNDEC Ludhiana</td>
+      <td>PTU</td>
+      <td>9.47</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>2020</td>
+        <td>Senior Secondary</td>
+        <td>G.H.G Khalsa School</td>
+        <td>PSEB</td>
+        <td>90 %</td>
+    </tr>
+  </table>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="index.js">
+   
+</script>
+</body>
+</html>
